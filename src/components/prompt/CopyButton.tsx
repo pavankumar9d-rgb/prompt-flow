@@ -45,10 +45,15 @@ export function CopyButtonGroup({
     // 1. Interpolate variables into base instructions
     let finalInstructions = systemInstructions;
     for (const [key, value] of Object.entries(variableValues)) {
-      if (value) {
-        finalInstructions = finalInstructions.replaceAll(`[${key}]`, value);
-      }
+      finalInstructions = finalInstructions.replaceAll(`[${key}]`, value || "");
     }
+    
+    // Also strip out any [Variable] tags that weren't inside variableValues at all
+    // by matching the systemInstructions format, just to be universally safe.
+    finalInstructions = finalInstructions.replace(/\[([A-Z][a-zA-Z0-9]+)\]/g, (match, p1) => {
+      // If it looks like a Template Variable and wasn't replaced, sweep it.
+      return variableValues[p1] ? match : "";
+    });
 
     // 2. Wrap in target-specific System Engine logic
     let finalPayload = buildSystemPrompt(promptTitle, finalInstructions, target, ctx);
