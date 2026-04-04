@@ -61,26 +61,43 @@ Located in `src/lib/system-engine.ts`.
 - **GPT-4o Target**: Emits hierarchical `Markdown` sections optimized to fit into OpenAI's `System` role message array.
 - **Cursor Target**: Emits explicit `<workspace_context>` tags that force the Cursor IDE agent to *"Read @package.json and @tsconfig.json before writing code."*
 
-### D. The Vercel AI SDK Layer
-Located in `src/lib/prompts/ai-sdk-prompts.ts`.
-- **Functionality**: A database of prompts crafted directly for building autonomous AI applications. Included are generators for type-safe tool-calling handlers, streaming route optimizers (`streamText()`), and Agentic loops bounded by `maxSteps`.
+### E. Deterministic Confidence System
+Located in `src/app/prompts/[slug]/page.tsx` and `src/components/prompt/PromptCard.tsx`.
+- **The Metric**: Every prompt undergoes a 10-step validation process against the Bun 1.2 runtime specs. 
+- **Dynamic Feedback**: As users toggle between "Claude" and "GPT" versions, the deterministic score and model-specific optimizations update in real-time, providing immediate visual feedback on the engineering "gravity" of the selected prompt.
 
 ---
 
-## 5. Component Flow (How it Works)
+## 7. Market Position & Differentiation
 
-1. **User Discovery**: The user browses the Bento Dashboard and selects a challenge (e.g., *Bun Runtime Diagnostics*).
-2. **Context Upload**: The user drops their `package.json` into the Context Injector and pastes the console error stack.
-3. **Data Assembly**: The `ContextInjector` parses the package limits and binds it to the application state (`InjectedContext`).
-4. **Compilation**: The user clicks "Copy for Claude". The `formatPrompt.ts` utility invokes the `system-engine.ts`.
-5. **Output Generation**: The engine binds the raw prompt rules, the injected workspace context, and the Bun.js universal rules into a single, cohesive XML payload.
-6. **Execution**: The user pastes this XML into Claude or Cursor, resulting in a zero-hallucination code fix generated instantly.
+| Platform | Methodology | Output Reliability | Context Awareness |
+| :--- | :--- | :--- | :--- |
+| **Generic Libraries** | Copy-paste templates | Low (Hallucination prone) | Zero |
+| **ChatGPT Plus** | Conversational Chat | Medium (Speculative) | Surface Level |
+| **Prompt-Flow Pro** | **Deterministic Compiler** | **Extreme (90+ DET Score)** | **Workspace-Injected** |
+
+Prompt-Flow Pro does not treat prompts as "chat messages." It treats them as **Infrastructure-as-Code**. By compiling raw intent with workspace constraints, we produce a payload that is mathematically more likely to compile on the first run than any raw conversational output.
 
 ---
 
-## 6. Technical Stack Summary
+## 8. The Vision & Roadmap
 
-- **Framework**: Bun.js + Next.js 15.x (Turbopack).
-- **Styling**: Tailwind CSS v4 + Framer Motion.
-- **State/Types**: 100% strict-mode TypeScript interfaces.
-- **Storage**: SQLite Database bound tightly to Drizzle ORM schemas (easily extendable for SaaS User Auth).
+The product is architected for rapid evolution into a full-scale **Engineering Intelligence Platform**:
+
+1. **Phase 1 (Current)**: Localized Engineering Intelligence. Deterministic prompt engine and high-fidelity Bento UI.
+2. **Phase 2 (Enterprise)**: Team-sync protocols. A shared prompt workspace for large engineering teams to standardize system instructions across their entire organization.
+3. **Phase 3 (CI/CD Integration)**: A CLI tool (`pf-check`) that validates your code changes against your Prompt-Flow system instructions directly in the build pipeline.
+4. **Phase 4 (Live Feed)**: The "Live Intelligence Feed" subscription, delivering real-time patches for the Vercel AI SDK and Bun.js runtime changes directly into the user dashboard.
+
+---
+
+## 9. Developer Experience (DX) Workflow
+
+The system is designed to minimize cognitive load:
+1. **Painless Entry**: No complex setup. Run `npm run dev` and your intelligence dashboard is live.
+2. **Deterministic Confidence**: The neon score badges give the developer an immediate "gut check" on the reliability of a prompt.
+3. **Multi-Action Export**: High-speed selection between Claude, GPT, and Cursor means zero friction when switching between your primary IDE and external chat tools.
+
+---
+
+*Architected by the Prompt-Flow Engineering Team · Built for the next era of Engineering Intelligence.*
