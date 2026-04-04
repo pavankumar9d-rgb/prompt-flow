@@ -89,6 +89,15 @@ function buildClaudeXml(
   ctx: InjectedContext
 ): string {
   const contextBlock = buildContextBlock(ctx);
+  const isArchitecture = title.toLowerCase().includes("review") || title.toLowerCase().includes("arch");
+  const protocolName = isArchitecture ? "AI Code Reviewer" : "Deterministic Bug Resolution";
+
+  // Surgical Intelligence for XML
+  let surgicalAdvice = "";
+  if (title.includes("SQLite")) surgicalAdvice = "\n    <protocol>Use Bun.sqlite native module and verify Database path.</protocol>";
+  if (title.includes("Hydration")) surgicalAdvice = "\n    <protocol>Gate window-dependent logic in useEffect to prevent hydration mismatch.</protocol>";
+  if (isArchitecture) surgicalAdvice = "\n    <protocol>Enforce Best Practice and Clean Code standards.</protocol>";
+
   return `<system_instruction>
   <identity>You are a Principal Engineer specializing in Bun.js, Next.js 15, TypeScript, and the Vercel AI SDK. You operate with zero hallucination tolerance.</identity>
 
@@ -96,11 +105,11 @@ function buildClaudeXml(
     ${BUN_RUNTIME_CONTEXT.split("\n").join("\n    ")}
   </runtime_constraints>
 
-  <chain_of_thought_protocol>
+  <chain_of_thought_protocol name="${protocolName}">
     Before providing any code solution, you MUST reason through:
     1. Identify Bun version context and constraints.
     2. Scan package.json for dependency conflicts or missing packages.
-    3. Propose a type-safe solution using native Bun APIs.
+    3. Propose a type-safe solution using native Bun APIs.${surgicalAdvice}
   </chain_of_thought_protocol>
 
   <task name="${title}">
@@ -126,6 +135,18 @@ function buildGptMarkdown(
     ? `\n## Workspace Context\n\n${buildContextBlock(ctx)}\n`
     : "";
 
+  const isArchitecture = title.toLowerCase().includes("review") || title.toLowerCase().includes("arch");
+  const REQUIREMENT_BRANDING = isArchitecture 
+    ? "AI Code Reviewer Protocol" 
+    : "Deterministic Bug Resolution Checklist";
+
+  // Surgical Intelligence: Inject specific advice based on the title/description
+  let surgicalAdvice = "";
+  if (title.includes("SQLite")) surgicalAdvice = "\n- **SQLite Protocol**: Use Bun.sqlite (native) over node-sqlite3. Check for .db-wal files.";
+  if (title.includes("Hydration")) surgicalAdvice = "\n- **Hydration Protocol**: Use useEffect to gate client-only logic or suppressHydrationWarning.";
+  if (title.includes("AI SDK")) surgicalAdvice = "\n- **AI SDK Protocol**: Ensure useChat/useCompletion hooks are correctly gated with check components.";
+  if (isArchitecture) surgicalAdvice = "\n- **Review Protocol**: Identify Best Practice violations and suggest Refactor paths.";
+
   return `# System Instructions: ${title}
 
 ## Role
@@ -136,7 +157,7 @@ You are a Principal Engineer at a top-tier TypeScript/Bun.js shop. Respond with 
 ${BUN_RUNTIME_CONTEXT}
 \`\`\`
 
-## Chain-of-Thought Requirement
+## ${REQUIREMENT_BRANDING}${surgicalAdvice}
 Structure your response as:
 1. **Root Cause Analysis** — What is actually broken or needed?
 2. **Bun API Selection** — Which native Bun APIs apply?

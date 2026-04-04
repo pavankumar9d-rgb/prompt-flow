@@ -1,0 +1,3487 @@
+﻿
+[1m[46m RUN [49m[22m [36mv4.1.2 [39m[90mC:/prompt lib/prompt-flow[39m
+
+ [31mΓ¥»[39m src/test/deterministic.test.ts [2m([22m[2m104 tests[22m[2m | [22m[31m23 failed[39m[2m)[22m[32m 56[2mms[22m[39m
+[31m     [31m├ù[31m [RT-001] Bun SQLite module not found in native environment[39m[32m 18[2mms[22m[39m
+[31m     [31m├ù[31m [RT-002] Next.js 15 Hydration mismatch on client component[39m[32m 4[2mms[22m[39m
+     [32mΓ£ô[39m [RT-003] Bug Resolution: Scenario 3[32m 1[2mms[22m[39m
+     [32mΓ£ô[39m [RT-004] Bug Resolution: Scenario 4[32m 1[2mms[22m[39m
+     [32mΓ£ô[39m [RT-005] Bug Resolution: Scenario 5[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-006] Bug Resolution: Scenario 6[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-007] Bug Resolution: Scenario 7[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-008] Bug Resolution: Scenario 8[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-009] Bug Resolution: Scenario 9[32m 1[2mms[22m[39m
+     [32mΓ£ô[39m [RT-010] Bug Resolution: Scenario 10[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-011] Bug Resolution: Scenario 11[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-012] Bug Resolution: Scenario 12[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-013] Bug Resolution: Scenario 13[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-014] Bug Resolution: Scenario 14[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-015] Bug Resolution: Scenario 15[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-016] Bug Resolution: Scenario 16[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-017] Bug Resolution: Scenario 17[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-018] Bug Resolution: Scenario 18[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-019] Bug Resolution: Scenario 19[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-020] Bug Resolution: Scenario 20[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-021] Bug Resolution: Scenario 21[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-022] Bug Resolution: Scenario 22[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-023] Bug Resolution: Scenario 23[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-024] Bug Resolution: Scenario 24[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-025] Bug Resolution: Scenario 25[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-026] Bug Resolution: Scenario 26[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-027] Bug Resolution: Scenario 27[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-028] Bug Resolution: Scenario 28[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-029] Bug Resolution: Scenario 29[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-030] Bug Resolution: Scenario 30[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-031] Bug Resolution: Scenario 31[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-032] Bug Resolution: Scenario 32[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-033] Bug Resolution: Scenario 33[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-034] Bug Resolution: Scenario 34[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-035] Bug Resolution: Scenario 35[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-036] Bug Resolution: Scenario 36[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-037] Bug Resolution: Scenario 37[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-038] Bug Resolution: Scenario 38[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-039] Bug Resolution: Scenario 39[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-040] Bug Resolution: Scenario 40[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-041] Bug Resolution: Scenario 41[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-042] Bug Resolution: Scenario 42[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-043] Bug Resolution: Scenario 43[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-044] Bug Resolution: Scenario 44[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-045] Bug Resolution: Scenario 45[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-046] Bug Resolution: Scenario 46[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-047] Bug Resolution: Scenario 47[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-048] Bug Resolution: Scenario 48[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-049] Bug Resolution: Scenario 49[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-050] Bug Resolution: Scenario 50[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-051] Bug Resolution: Scenario 51[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-052] Bug Resolution: Scenario 52[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-053] Bug Resolution: Scenario 53[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-054] Bug Resolution: Scenario 54[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-055] Bug Resolution: Scenario 55[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-056] Bug Resolution: Scenario 56[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-057] Bug Resolution: Scenario 57[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-058] Bug Resolution: Scenario 58[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-059] Bug Resolution: Scenario 59[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-060] Bug Resolution: Scenario 60[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-061] Bug Resolution: Scenario 61[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-062] Bug Resolution: Scenario 62[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-063] Bug Resolution: Scenario 63[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-064] Bug Resolution: Scenario 64[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-065] Bug Resolution: Scenario 65[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-066] Bug Resolution: Scenario 66[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-067] Bug Resolution: Scenario 67[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-068] Bug Resolution: Scenario 68[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-069] Bug Resolution: Scenario 69[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-070] Bug Resolution: Scenario 70[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-071] Bug Resolution: Scenario 71[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-072] Bug Resolution: Scenario 72[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-073] Bug Resolution: Scenario 73[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-074] Bug Resolution: Scenario 74[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-075] Bug Resolution: Scenario 75[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-076] Bug Resolution: Scenario 76[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-077] Bug Resolution: Scenario 77[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-078] Bug Resolution: Scenario 78[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-079] Bug Resolution: Scenario 79[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-080] Bug Resolution: Scenario 80[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-081] Bug Resolution: Scenario 81[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-082] Bug Resolution: Scenario 82[32m 0[2mms[22m[39m
+     [32mΓ£ô[39m [RT-083] Bug Resolution: Scenario 83[32m 0[2mms[22m[39m
+[31m     [31m├ù[31m [AR-001] Code Review: Scenario 84[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-002] Code Review: Scenario 85[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-003] Code Review: Scenario 86[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-004] Code Review: Scenario 87[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-005] Code Review: Scenario 88[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-006] Code Review: Scenario 89[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-007] Code Review: Scenario 90[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-008] Code Review: Scenario 91[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-009] Code Review: Scenario 92[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-010] Code Review: Scenario 93[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-011] Code Review: Scenario 94[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-012] Code Review: Scenario 95[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-013] Code Review: Scenario 96[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-014] Code Review: Scenario 97[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-015] Code Review: Scenario 98[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-016] Code Review: Scenario 99[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-017] Code Review: Scenario 100[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-018] Code Review: Scenario 101[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-019] Code Review: Scenario 102[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-020] Code Review: Scenario 103[39m[32m 1[2mms[22m[39m
+[31m     [31m├ù[31m [AR-021] Code Review: Scenario 104[39m[32m 1[2mms[22m[39m
+node.exe : 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (:String)   
+  [], RemoteException
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[39m[
+1m[41m Failed Tests 23 [49m
+[22m[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[RT-001] Bun SQLite 
+module not found in native 
+environment
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Native Bun API'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Native Bun API[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="Deterministic Bug 
+Resolution">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Bun 
+SQLite module not found in 
+native environment">[39m
+[31m+     import { Database 
+} from "bun:sqlite";[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   <error_stack_trace 
+priority="HIGHEST">[39m
+[31m+   TypeError: Cannot 
+find module 'bun:sqlite'[39m
+[31m+   
+</error_stack_trace>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[1/23]ΓÄ»[2
+2m[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[RT-002] Next.js 15 
+Hydration mismatch on client 
+component
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'useEffect'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- useEffect[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="Deterministic Bug 
+Resolution">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Next.js 
+15 Hydration mismatch on 
+client component">[39m
+[31m+     <div>{typeof 
+window !== "undefined" ? 
+"client" : 
+"server"}</div>[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   <error_stack_trace 
+priority="HIGHEST">[39m
+[31m+   Error: Hydration 
+failed because the initial UI 
+does not match[39m
+[31m+   
+</error_stack_trace>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[2/23]ΓÄ»[2
+2m[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-001] Code Review: 
+Scenario 84
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 84">[39m
+[31m+     // Architectural 
+pattern 84[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[3/23]ΓÄ»[2
+2m[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-002] Code Review: 
+Scenario 85
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 85">[39m
+[31m+     // Architectural 
+pattern 85[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[4/23]ΓÄ»[2
+2m[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-003] Code Review: 
+Scenario 86
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 86">[39m
+[31m+     // Architectural 
+pattern 86[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[5/23]ΓÄ»[2
+2m[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-004] Code Review: 
+Scenario 87
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 87">[39m
+[31m+     // Architectural 
+pattern 87[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[6/23]ΓÄ»[2
+2m[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-005] Code Review: 
+Scenario 88
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 88">[39m
+[31m+     // Architectural 
+pattern 88[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[7/23]ΓÄ»[2
+2m[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-006] Code Review: 
+Scenario 89
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 89">[39m
+[31m+     // Architectural 
+pattern 89[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[8/23]ΓÄ»[2
+2m[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-007] Code Review: 
+Scenario 90
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 90">[39m
+[31m+     // Architectural 
+pattern 90[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[9/23]ΓÄ»[2
+2m[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-008] Code Review: 
+Scenario 91
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 91">[39m
+[31m+     // Architectural 
+pattern 91[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[10/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-009] Code Review: 
+Scenario 92
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 92">[39m
+[31m+     // Architectural 
+pattern 92[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[11/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-010] Code Review: 
+Scenario 93
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 93">[39m
+[31m+     // Architectural 
+pattern 93[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[12/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-011] Code Review: 
+Scenario 94
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 94">[39m
+[31m+     // Architectural 
+pattern 94[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[13/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-012] Code Review: 
+Scenario 95
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 95">[39m
+[31m+     // Architectural 
+pattern 95[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[14/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-013] Code Review: 
+Scenario 96
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 96">[39m
+[31m+     // Architectural 
+pattern 96[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[15/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-014] Code Review: 
+Scenario 97
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 97">[39m
+[31m+     // Architectural 
+pattern 97[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[16/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-015] Code Review: 
+Scenario 98
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 98">[39m
+[31m+     // Architectural 
+pattern 98[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[17/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-016] Code Review: 
+Scenario 99
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 99">[39m
+[31m+     // Architectural 
+pattern 99[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[18/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-017] Code Review: 
+Scenario 100
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 100">[39m
+[31m+     // Architectural 
+pattern 100[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[19/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-018] Code Review: 
+Scenario 101
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 101">[39m
+[31m+     // Architectural 
+pattern 101[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[20/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-019] Code Review: 
+Scenario 102
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 102">[39m
+[31m+     // Architectural 
+pattern 102[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[21/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-020] Code Review: 
+Scenario 103
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 103">[39m
+[31m+     // Architectural 
+pattern 103[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m23 failed[39m[22m[2m | [22m[1m[32m81 passed[39m[22m[90m (104)[39m
+[2m   Start at [22m 17:50:40
+[2m   Duration [22m 3.89s[2m (transform 149ms, setup 456ms, import 91ms, tests 56ms, environment 2.94s)[22m
+
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22/23]ΓÄ»[22m
+[39m
+
+[41m[1m FAIL [22m[49m src/
+test/deterministic.test.ts[2m
+ > [22mPrompt-Flow Pro: 104 
+Deterministic Scenarios[2m > 
+[22m[AR-021] Code Review: 
+Scenario 104
+[31m[1mAssertionError[22m: 
+expected 
+'<system_instruction>\n  
+<identity>YouΓÇª' to contain 
+'Best Practice'[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- Best Practice[39m
+[31m+ 
+<system_instruction>[39m
+[31m+   <identity>You are a 
+Principal Engineer 
+specializing in Bun.js, 
+Next.js 15, TypeScript, and 
+the Vercel AI SDK. You 
+operate with zero 
+hallucination 
+tolerance.</identity>[39m
+[31m+[39m
+[31m+   
+<runtime_constraints>[39m
+[31m+     Bun v1.2+ Runtime 
+Constraints:[39m
+[31m+     - Use Bun.file() / 
+Bun.write() for all file I/O 
+ΓÇö never Node 
+fs/promises.[39m
+[31m+     - Use 
+Bun.password.hash() / 
+Bun.password.verify() for 
+credential hashing.[39m
+[31m+     - Use Bun.serve() 
+for HTTP ΓÇö avoid the 
+http/https Node modules.[39m
+[31m+     - Use Bun.sqlite 
+(built-in) or Drizzle ORM 
+with better-sqlite3 for 
+database access.[39m
+[31m+     - Native fetch() 
+is available globally ΓÇö no 
+node-fetch.[39m
+[31m+     - Use Bun.env for 
+environment variables ΓÇö no 
+dotenv.[39m
+[31m+     - Performance: 
+prefer Bun.ArrayBufferSink 
+for high-throughput 
+streaming.[39m
+[31m+   
+</runtime_constraints>[39m
+[31m+[39m
+[31m+   
+<chain_of_thought_protocol 
+name="AI Code Reviewer">[39m
+[31m+     Before providing 
+any code solution, you MUST 
+reason through:[39m
+[31m+     1. Identify Bun 
+version context and 
+constraints.[39m
+[31m+     2. Scan 
+package.json for dependency 
+conflicts or missing 
+packages.[39m
+[31m+     3. Propose a 
+type-safe solution using 
+native Bun APIs.[39m
+[31m+   </chain_of_thought_pr
+otocol>[39m
+[31m+[39m
+[31m+   <task name="Code 
+Review: Scenario 104">[39m
+[31m+     // Architectural 
+pattern 104[39m
+[31m+     export function 
+Component() {}[39m
+[31m+   </task>[39m
+[31m+[39m
+[31m+   <injected_workspace_c
+ontext>[39m
+[31m+   
+<workspace_package_json>[39m
+[31m+     name: unknown[39m
+[31m+     version: 1.2.0[39m
+[31m+     dependencies:[39m
+[31m+     (none)[39m
+[31m+     
+devDependencies:[39m
+[31m+     (none)[39m
+[31m+   
+</workspace_package_json>[39m
+[31m+   </injected_workspace_
+context>[39m
+[31m+   <output_format>[39m
+[31m+     - Respond with a 
+structured solution: 
+explanation ΓåÆ code block 
+ΓåÆ usage example.[39m
+[31m+     - All code must be 
+Bun-native, 100% TypeScript 
+with strict mode.[39m
+[31m+     - Format: 
+TypeScript code blocks with 
+`// bun` shebang where 
+applicable.[39m
+[31m+   </output_format>[39m
+[31m+ 
+</system_instruction>[39m
+
+[36m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m26:24
+[22m[39m
+    [90m 24|[39m       // 
+Verify that the generated 
+prompt contains all expected 
+determΓÇª
+    [90m 25|[39m       scena
+rio[33m.[39mexpectedInclusio
+ns[33m.[39m[34mforEach[39m
+((marker) [33m=>[39m {
+    [90m 26|[39m         [3
+4mexpect[39m(result)[33m.[3
+9m[34mtoContain[39m(marker)
+[33m;[39m
+    [90m   |[39m            
+            [31m^[39m
+    [90m 27|[39m       
+})[33m;[39m
+    [90m 28|[39m
+[90m [2mΓ¥»[22m src/test/de
+terministic.test.ts:[2m25:35
+[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[23/23]ΓÄ»[22m
+[39m
+

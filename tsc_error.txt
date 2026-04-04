@@ -1,0 +1,4 @@
+﻿src/test/verify_usage.ts(52,54): error TS2345: Argument of type '{ PrismaError: string; Schema: string; TargetObject?: undefined; ZodSchema?: undefined; } | { TargetObject: string; ZodSchema: string; PrismaError?: undefined; Schema?: undefined; }' is not assignable to parameter of type 'Record<string, string>'.
+  Type '{ PrismaError: string; Schema: string; TargetObject?: undefined; ZodSchema?: undefined; }' is not assignable to type 'Record<string, string>'.
+    Property 'TargetObject' is incompatible with index signature.
+      Type 'undefined' is not assignable to type 'string'.

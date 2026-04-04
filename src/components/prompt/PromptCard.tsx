@@ -8,9 +8,17 @@ import type { Prompt } from "@/types/prompt";
 
 interface PromptCardProps {
   prompt: Prompt;
+  isAuthenticated?: boolean;
+  hasPremiumAccess?: boolean;
+  className?: string;
 }
 
-export function PromptCard({ prompt }: PromptCardProps) {
+export function PromptCard({ 
+  prompt, 
+  isAuthenticated = false, 
+  hasPremiumAccess = false,
+  className = ""
+}: PromptCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   // Modern Style: Emerald-green neon ring for deterministic score

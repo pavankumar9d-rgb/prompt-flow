@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, X } from "lucide-react";
+import { CheckCircle2, X, Shield } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Sidebar } from "@/components/layout/Sidebar";
 
@@ -148,6 +148,23 @@ export default function PricingPage() {
                 </div>
               </motion.div>
             </motion.div>
+
+            {/* ── Security Trust Seals ────────────────────────────────────────── */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+              {[
+                { title: "100% Local-First", desc: "No code ever leaves your machine. Analysis happens in volatile RAM.", icon: Shield },
+                { title: "Zero-Telemetry",  desc: "We don't track your prompts or your projects. Zero external fetch calls.", icon: X },
+                { title: "Native Encryption", desc: "Secure local storage using native Bun APIs for deterministic keys.", icon: CheckCircle2 },
+              ].map((seal, i) => (
+                <div key={i} className="flex flex-col items-center text-center p-6 rounded-3xl border border-white/[0.04] bg-white/[0.01]">
+                  <div className="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
+                    <seal.icon size={18} />
+                  </div>
+                  <h4 className="text-sm font-bold text-white mb-2">{seal.title}</h4>
+                  <p className="text-[12px] text-white/40 leading-relaxed">{seal.desc}</p>
+                </div>
+              ))}
+            </div>
 
             {/* Feature Comparison Table */}
             <div className="border border-white/[0.06] rounded-3xl overflow-hidden glass bg-[#111111]">

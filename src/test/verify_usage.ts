@@ -49,7 +49,7 @@ testCases.forEach((tc) => {
   console.log(`--- CATEGORY: ${tc.category.toUpperCase()} ---`);
   console.log(`PROMPT: ${tc.title}`);
   
-  const result = formatPrompt(tc.title, tc.template, tc.variables, "claude");
+  const result = formatPrompt(tc.title, tc.template, tc.variables as any, "claude");
   
   console.log("\nRENDERED OUTPUT (CLAUDE XML OPTIMIZED):");
   console.log(result);

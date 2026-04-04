@@ -1,0 +1,94 @@
+﻿
+> prompt-flow@0.1.0 build
+> next build --turbopack
+
+   Γû▓ Next.js 15.5.14 (Turbopack)
+
+   Creating an optimized production build ...
+ Γ£ô Finished writing to disk in 522ms
+ Γ£ô Compiled successfully in 48s
+   Linting and checking validity of types ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (:  
+  String) [], RemoteExc   
+ eption
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+ ΓÜá The Next.js plugin 
+was not detected in your 
+ESLint configuration. See 
+https://nextjs.org/docs/ap
+p/api-reference/config/esl
+int#migrating-existing-con
+fig
+Failed to compile.
+
+./src/test/verify_usage.ts
+:52:54
+Type error: Argument of 
+type '{ PrismaError: 
+string; Schema: string; 
+TargetObject?: undefined; 
+ZodSchema?: undefined; } 
+| { TargetObject: string; 
+ZodSchema: string; 
+PrismaError?: undefined; 
+Schema?: undefined; }' is 
+not assignable to 
+parameter of type 
+'Record<string, string>'.
+  Type '{ PrismaError: 
+string; Schema: string; 
+TargetObject?: undefined; 
+ZodSchema?: undefined; }' 
+is not assignable to type 
+'Record<string, string>'.
+    Property 
+'TargetObject' is 
+incompatible with index 
+signature.
+      Type 'undefined' is 
+not assignable to type 
+'string'.
+
+[0m [90m 50 |[39m   con
+sole[33m.[39mlog([32m`P
+ROMPT: ${tc.title}`[39m)
+[33m;[39m
+ [90m 51 |[39m   
+[31m[1m>[22m[39m[90m 
+52 |[39m   
+[36mconst[39m result 
+[33m=[39m formatPrompt(t
+c[33m.[39mtitle[33m,[3
+9m tc[33m.[39mtemplate[
+33m,[39m tc[33m.[39mvar
+iables[33m,[39m [32m"cl
+aude"[39m)[33m;[39m
+ [90m    |[39m          
+                          
+                  
+[31m[1m^[22m[39m
+ [90m 53 |[39m   
+ [90m 54 |[39m   console
+[33m.[39mlog([32m"\nREN
+DERED OUTPUT (CLAUDE XML O
+PTIMIZED):"[39m)[33m;[3
+9m
+ [90m 55 |[39m   console
+[33m.[39mlog(result)[33
+m;[39m[0m
+Next.js build worker 
+exited with code: 1 and 
+signal: null

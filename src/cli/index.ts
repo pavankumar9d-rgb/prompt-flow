@@ -20,41 +20,62 @@ async function main() {
   let dashboardUrl = "";
 
   // 1. Parse Args
+  const isQuiet = args.includes("--quiet") || args.includes("-q");
+  const isJson = args.includes("--json");
+  const isValidate = args.includes("--validate");
+
   for (let i = 0; i < args.length; i++) {
-    if (args[i] === "-u" || args[i] === "--url" || args[i] === "--dashboard-url") {
+    const arg = args[i];
+    if (arg === "-u" || arg === "--url" || arg === "--dashboard-url") {
       dashboardUrl = args[i + 1];
-      break;
     }
   }
 
-  console.log(`\n🌊 Prompt-Flow Pro CLI v${VERSION}`);
-  console.log(`───────────────────────────────────────`);
+  if (!isQuiet && !isJson) {
+    console.log(`\n🌊 Prompt-Flow Pro CLI v${VERSION}`);
+    console.log(`───────────────────────────────────────`);
+  }
 
   // 2. Auto-Detect Dashboard Port if not provided
   if (!dashboardUrl) {
-    console.log("[?] No dashboard URL provided. Auto-detecting local instance...");
+    if (!isQuiet && !isJson) console.log("[?] No dashboard URL provided. Auto-detecting local instance...");
     for (const port of DEFAULT_PORTS) {
       const url = `http://localhost:${port}`;
       try {
         const res = await fetch(`${url}/api/health`, { signal: AbortSignal.timeout(500) });
         if (res.ok) {
           dashboardUrl = url;
-          console.log(`[+] Found active dashboard at: ${dashboardUrl}`);
+          if (!isQuiet && !isJson) console.log(`[+] Found active dashboard at: ${dashboardUrl}`);
           break;
         }
       } catch {
-        // Port closed, continue scanning
+        // Port closed
       }
     }
   }
 
-  // Fallback to default if detection fails
-  if (!dashboardUrl) {
-    dashboardUrl = "http://localhost:3000";
-    console.log(`[!] Auto-detection failed. Falling back to default: ${dashboardUrl}`);
+  // 3. Validation Mode
+  if (isValidate) {
+    const status = dashboardUrl ? "ready" : "offline";
+    if (isJson) {
+      console.log(JSON.stringify({ status, url: dashboardUrl, version: VERSION }));
+    } else if (!isQuiet) {
+      if (dashboardUrl) {
+        console.log(`[✓] Validation SUCCESS: Dashboard active at ${dashboardUrl}`);
+      } else {
+        console.error(`[X] Validation FAILED: No local dashboard found.`);
+      }
+    }
+    process.exit(dashboardUrl ? 0 : 1);
   }
 
-  // 3. Read & Filter Context
+  // Fallback
+  if (!dashboardUrl) {
+    dashboardUrl = "http://localhost:3000";
+    if (!isQuiet && !isJson) console.log(`[!] Auto-detection failed. Falling back to default: ${dashboardUrl}`);
+  }
+
+  // 4. Read & Filter Context
   let packageJson: any = null;
   let tsConfig: any = null;
 
@@ -105,12 +126,17 @@ async function main() {
   
   const finalUrl = `${dashboardUrl}/?cli_context=${encoded}`;
   
-  console.log(`[+] Injecting context into dashboard...`);
+  if (isJson) {
+    console.log(JSON.stringify({ url: finalUrl, success: true }));
+    process.exit(0);
+  }
+
+  if (!isQuiet) console.log(`[+] Injecting context into dashboard...`);
   
   const startCmd = process.platform === "win32" ? "start" : process.platform === "darwin" ? "open" : "xdg-open";
   exec(`${startCmd} "${finalUrl}"`);
 
-  console.log(`[✓] Done. Your dashboard should launch automatically.\n`);
+  if (!isQuiet) console.log(`[✓] Done. Your dashboard should launch automatically.\n`);
 }
 
 main().catch((err) => {

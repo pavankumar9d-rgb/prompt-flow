@@ -7,7 +7,9 @@
     "build": "next build --turbopack",
     "start": "next start",
     "cli": "bun run src/cli/index.ts",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:deterministic": "vitest run src/test/deterministic.test.ts",
+    "test:coverage": "vitest run --coverage"
   },
   "bin": {
     "prompt-flow": "src/cli/index.ts"
