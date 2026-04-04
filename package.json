@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
+    "cli": "bun run src/cli/index.ts",
     "lint": "eslint"
+  },
+  "bin": {
+    "prompt-flow": "src/cli/index.ts"
   },
   "dependencies": {
     "@codemirror/commands": "^6.10.3",
@@ -48,6 +52,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^6.0.1",
+    "@vitest/coverage-v8": "^4.1.2",
     "autocannon": "^8.0.0",
     "axe-playwright": "^2.2.2",
     "better-sqlite3": "^12.8.0",

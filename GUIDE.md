@@ -18,7 +18,30 @@ When you open **Prompt-Flow Pro**, you are greeted by an elite Bento Grid Dashbo
 
 ---
 
-## 🧪 2. Using an Elite Prompt
+## ⌨️ 2. The Universal CLI Workflow
+
+For the most professional experience, use the Prompt-Flow CLI to bridge your local terminal to the dashboard. 
+
+### Step A: Sync Local Context
+Instead of manual drag-and-drop, run the following command in your project root:
+```bash
+bunx prompt-flow
+```
+
+### Step B: Smart Filtering
+The CLI automatically scans your `package.json` and `tsconfig.json`. If your manifests are large (over 20KB), it applies a **Smart Filter** to strip out irrelevant `devDependencies` (like test scripts or linters) to keep the AI's context window focused strictly on production runtime logic.
+
+### Step C: Auto-Detection
+The CLI will automatically find your running dashboard on common ports (3000, 3001, etc.). If you have a custom setup, use the flag:
+```bash
+bunx prompt-flow --url http://localhost:3001
+```
+
+Once executed, your browser will launch directly into the dashboard with a green **`CLI_SYNC`** status badge confirmed.
+
+---
+
+## 🧪 3. Using an Elite Prompt
 
 ### Step A: Selection & Variable Injection
 Click **View** on a prompt (like "Bun Runtime Error Diagnostics"). You'll see the Expert Persona instructions and variable inputs.
@@ -57,6 +80,17 @@ Included in the Pro version is an exclusive suite of tools dedicated to the Verc
 
 > [!TIP]
 > **Cursor Integration.** When using the "Copy for Cursor" button, create a new `cursorrules` or Agent context file and paste the copied XML directly into it. The file-path directives embedded by the System Engine will instruct Cursor exactly where to write the solution.
+
+---
+
+## 🛡️ 5. Professional Security Disclosure
+
+Prompt-Flow Pro is built on a **Local-First** privacy architecture. 
+- **Offline Processing**: All context parsing happens in your browser's memory. Your code never leaves your machine.
+- **Zero Telemetry**: We do not track your project manifests, dependencies, or error logs.
+- **Purge Architecture**: Context is volatile and terminates when you close your tab.
+
+👉 **[Read the full Security Disclosure](SECURITY.md)**
 
 ---
 

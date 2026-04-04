@@ -61,7 +61,18 @@ Located in `src/lib/system-engine.ts`.
 - **GPT-4o Target**: Emits hierarchical `Markdown` sections optimized to fit into OpenAI's `System` role message array.
 - **Cursor Target**: Emits explicit `<workspace_context>` tags that force the Cursor IDE agent to *"Read @package.json and @tsconfig.json before writing code."*
 
-### E. Deterministic Confidence System
+### D. Universal CLI Bridge (`bunx prompt-flow`)
+Located in `src/cli/index.ts`.
+- **Functionality**: A native Bun CLI that scans local project manifests and "pipes" them to the web dashboard.
+- **Smart Filter Logic**: If a `package.json` exceeds 20KB, the CLI automatically strips `devDependencies` to optimize the AI's context window.
+- **Auto-Port Detection**: Quickly scans `localhost` (ports 3000-8081) to find the active dashboard instance, providing a "magic" zero-config experience.
+
+### E. Local-First Security Layer
+Managed via the **Context Injector** and disclosed in `SECURITY.md`.
+- **Zero-Remote Processing**: All file parsing happens in-browser. Source code never leaves the client's machine.
+- **Volatile Memory**: Injected context is purged immediately upon tab closure, adhering to enterprise "Least Privilege" security standards.
+
+### F. Deterministic Confidence System
 Located in `src/app/prompts/[slug]/page.tsx` and `src/components/prompt/PromptCard.tsx`.
 - **The Metric**: Every prompt undergoes a 10-step validation process against the Bun 1.2 runtime specs. 
 - **Dynamic Feedback**: As users toggle between "Claude" and "GPT" versions, the deterministic score and model-specific optimizations update in real-time, providing immediate visual feedback on the engineering "gravity" of the selected prompt.

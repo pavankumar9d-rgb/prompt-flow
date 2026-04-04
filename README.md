@@ -8,13 +8,13 @@
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
     <img src="https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
     <img src="https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white" alt="Bun" />
-    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+    <img src="https://img.shields.io/badge/Security-Local_Only-success?style=for-the-badge" alt="Security" />
   </p>
 </div>
 
 ---
 
-**Prompt-Flow Pro** is a high-fidelity, deterministic engineering layer optimized for the modern developer ecosystem. It eliminates the trial-and-error of standard AI tools by wrapping raw prompts in rigorous, model-specific "Chain-of-Thought" structures and automatically injecting multi-file workspace context.
+**Prompt-Flow Pro** is an elite, deterministic engineering layer optimized for modern software delivery. It eliminates the trial-and-error of standard AI tools by wrapping raw prompts in rigorous, model-specific "Chain-of-Thought" structures and automatically injecting multi-file workspace context.
 
 ---
 
@@ -61,17 +61,26 @@ The problem with current AI models is not intelligence—it is **context alignme
   - **GPT-4o (MD)**: Using hierarchical constraints
   - **Cursor (Agent)**: Emitting explicit `@package.json` and `@tsconfig.json` directives.
 
----
+## 🛡️ Security & Privacy
 
-## 🛡️ Testing & Verification
-
-For instructions on how to manually verify the strict deterministic outputs and UI workflows, see the dedicated testing protocol:
-👉 **[Read the Manual Testing Guide](MANUAL_TESTING.md)**
+Prompt-Flow Pro is built on a **Local-First** privacy architecture. 
+- **Client-Side Processing**: All file parsing (package.json, tsconfig.json) happens purely in your browser's memory. 
+- **Zero Data Exit**: We never transmit your source code or project metadata to a remote server. 
+- **CLI Signal**: Context injection via the CLI remains entirely within your local `localhost` loop.
+👉 **[Read our Security Disclosure](SECURITY.md)**
 
 ---
 
 ## 🚀 Getting Started
 
+### 1. Unified CLI Workflow (Recommended)
+Automatically sync your project context with the Pro dashboard:
+```bash
+# In your project root
+bunx prompt-flow
+```
+
+### 2. Manual Installation
 1. **Clone the Repo:**
    ```bash
    git clone https://github.com/pavankumar9d-rgb/prompt-flow.git
@@ -88,5 +97,5 @@ For instructions on how to manually verify the strict deterministic outputs and 
 
 ---
 <div align="center">
-  <i>Architected by the Prompt-Flow Engineering Team.</i>
+  <i>Architected by the Prompt-Flow Engineering Team · Built for elite engineering teams.</i>
 </div>

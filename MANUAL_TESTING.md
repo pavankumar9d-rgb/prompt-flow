@@ -55,10 +55,19 @@ Scroll to the bottom of the page to find the **Export to LLM** button.
 
 ---
 
-## Step 5: Verify Lack of UI Errors
-Throughout this entire process:
-- No Next.js Red Error Overlay should appear.
-- The Dropdown menu should smoothly animate up and down without glitching.
-- The URL routing should stay intact without crashing the browser.
+## Step 6: Professional CLI Verification
+To verify the terminal-to-browser context injection:
+1. Open your terminal in any project root (ensure it has a `package.json`).
+2. Run the command:
+   ```bash
+   bunx prompt-flow
+   ```
+3. *Verification*: 
+   - Your default browser should automatically launch to `http://localhost:3000/`.
+   - A green **`CLI_SYNC`** status badge should be visible on the Context Injector.
+   - The `package.json` should be pre-loaded into the workspace without manual dragging.
+
+---
 
 *If you can successfully complete these steps and see the targeted LLM payloads on your clipboard, your Prompt-Flow Pro installation is 100% bug-free and production-ready.*
+

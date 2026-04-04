@@ -8,6 +8,7 @@ import { PlaygroundOutput } from "@/components/playground/PlaygroundOutput";
 import { VariableInput } from "@/components/prompt/VariableInput";
 import { ContextInjector } from "@/components/prompt/ContextInjector";
 import { formatPrompt } from "@/lib/formatPrompt";
+import type { InjectedContext } from "@/lib/system-engine";
 
 const INITIAL_PROMPT = `You are a senior TypeScript developer.
 Write a [Target] implementation that uses the following schema:
@@ -21,6 +22,7 @@ Ensure it is fully typed and uses best practices.`;
 export default function PlaygroundPage() {
   const [editorContent, setEditorContent] = useState(INITIAL_PROMPT);
   const [variables, setVariables] = useState<Record<string, string>>({});
+  const [injectedCtx, setInjectedCtx] = useState<InjectedContext>({});
 
   // Extremely naive variable parser for the playground demo
   // Looks for [Word] patterns
@@ -50,7 +52,7 @@ export default function PlaygroundPage() {
     }
   };
 
-  const finalOutput = formatPrompt("Playground Prompt", editorContent, variables, "claude");
+  const finalOutput = formatPrompt("Playground Prompt", editorContent, variables, "claude", injectedCtx);
 
   return (
     <div className="flex h-screen overflow-hidden bg-[var(--bg-base)]">
@@ -89,7 +91,10 @@ export default function PlaygroundPage() {
                         values={variables} 
                         onChange={handleVariableChange} 
                       />
-                      <ContextInjector onInject={handleContextInject} />
+                      <ContextInjector 
+                        onContextChange={setInjectedCtx} 
+                        injectedContext={injectedCtx}
+                      />
                     </>
                   ) : (
                     <div className="flex-1 flex flex-col items-center justify-center text-center">

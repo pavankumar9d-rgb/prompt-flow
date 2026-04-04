@@ -8,7 +8,10 @@ import { VariableInput } from "@/components/prompt/VariableInput";
 import { CopyButtonGroup } from "@/components/prompt/CopyButton";
 import { VersionTabs } from "@/components/prompt/VersionTabs";
 import { ContextInjector } from "@/components/prompt/ContextInjector";
-import { ChevronRight, Shield } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { parseCliContext } from "@/lib/cli-provider";
+import { useEffect } from "react";
+import { ChevronRight, Shield, Terminal } from "lucide-react";
 import Link from "next/link";
 import type { Prompt, PromptVersion } from "@/types/prompt";
 import type { InjectedContext } from "@/lib/system-engine";
@@ -99,6 +102,18 @@ export default function PromptDetailPage() {
     }
   }, [prompt.variables]);
 
+  // Handle CLI Context URL Injection
+  const searchParams = useSearchParams();
+  useEffect(() => {
+    const cliData = searchParams.get("cli_context");
+    if (cliData) {
+      const parsed = parseCliContext(cliData);
+      if (parsed) {
+        setInjectedCtx(parsed);
+      }
+    }
+  }, [searchParams]);
+
   const score = scoreColor(prompt.deterministicScore);
 
   const ContentArea = () => (
@@ -156,7 +171,10 @@ export default function PromptDetailPage() {
           <p className="text-[10px] font-mono font-semibold text-white/30 uppercase tracking-widest mb-3">
             Multi-File Workspace Context
           </p>
-          <ContextInjector onContextChange={handleContextChange} />
+          <ContextInjector 
+            onContextChange={handleContextChange} 
+            injectedContext={injectedCtx}
+          />
         </div>
 
         {/* Export */}

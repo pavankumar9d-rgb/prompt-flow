@@ -4,10 +4,11 @@ import { useState, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FolderOpen, FileCode2, Check, X, AlertTriangle,
-  Package, Settings, TerminalSquare, Loader2, ChevronDown, ChevronUp,
+  Package, Settings, TerminalSquare, Loader2, ChevronDown, ChevronUp, Terminal
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { parsePackageJson, parseTsConfig, type InjectedContext } from "@/lib/system-engine";
+import { useEffect } from "react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -19,6 +20,7 @@ interface InjectedFileState {
 
 interface ContextInjectorProps {
   onContextChange: (ctx: InjectedContext) => void;
+  injectedContext?: InjectedContext;
   className?: string;
 }
 
@@ -45,7 +47,7 @@ const FILE_META: Record<
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 
-export function ContextInjector({ onContextChange, className }: ContextInjectorProps) {
+export function ContextInjector({ onContextChange, injectedContext, className }: ContextInjectorProps) {
   const [isDragging, setIsDragging] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
   const [files, setFiles] = useState<InjectedFileState[]>([]);
@@ -53,7 +55,25 @@ export function ContextInjector({ onContextChange, className }: ContextInjectorP
   const [errorStack, setErrorStack] = useState("");
   const [showErrorInput, setShowErrorInput] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const [isCliInjected, setIsCliInjected] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Sync external injectedContext (from CLI URL)
+  useEffect(() => {
+    if (injectedContext && (injectedContext.packageJson || injectedContext.tsConfig)) {
+      const newFiles: InjectedFileState[] = [];
+      if (injectedContext.packageJson) {
+        newFiles.push({ name: "package.json (CLI)", type: "package", sizeBytes: 0 });
+      }
+      if (injectedContext.tsConfig) {
+        newFiles.push({ name: "tsconfig.json (CLI)", type: "tsconfig", sizeBytes: 0 });
+      }
+      setFiles(newFiles);
+      setContext(injectedContext);
+      setIsCliInjected(true);
+      setExpanded(true);
+    }
+  }, [injectedContext]);
 
   // ── Process a set of File objects ─────────────────────────────────────────
 
@@ -246,6 +266,13 @@ export function ContextInjector({ onContextChange, className }: ContextInjectorP
             </motion.div>
           )}
         </AnimatePresence>
+
+        {isCliInjected && (
+          <div className="absolute top-2 right-2 flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[9px] font-mono font-bold text-emerald-400">
+            <Terminal size={10} />
+            CLI_SYNC
+          </div>
+        )}
       </motion.div>
 
       {/* Injected Files List */}
