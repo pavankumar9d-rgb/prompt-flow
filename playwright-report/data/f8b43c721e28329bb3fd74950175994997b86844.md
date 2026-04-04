@@ -1,0 +1,259 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: system.test.ts >> System & Specialty Testing >> Accessibility: Homepage WCAG compliance
+- Location: src\test\e2e\system.test.ts:10:7
+
+# Error details
+
+```
+AssertionError: 1 accessibility violation was detected
+
+1 !== 0
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - link "PromptFlow Engineering Intelligence" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e9]:
+          - generic [ref=e10]: PromptFlow
+          - generic [ref=e11]: Engineering Intelligence
+      - navigation [ref=e12]:
+        - button "All Prompts" [ref=e13]:
+          - img [ref=e16]
+          - generic [ref=e21]: All Prompts
+        - button "Popular" [ref=e22]:
+          - img [ref=e24]
+          - generic [ref=e26]: Popular
+        - paragraph [ref=e28]: Categories
+        - button "Debugging" [ref=e29]:
+          - img [ref=e31]
+          - generic [ref=e40]: Debugging
+        - button "Boilerplate" [ref=e41]:
+          - img [ref=e43]
+          - generic [ref=e47]: Boilerplate
+        - button "Vercel AI SDK" [ref=e48]:
+          - img [ref=e50]
+          - generic [ref=e53]: Vercel AI SDK
+        - button "Logic" [ref=e54]:
+          - img [ref=e56]
+          - generic [ref=e58]: Logic
+        - button "Refactoring" [ref=e59]:
+          - img [ref=e61]
+          - generic [ref=e66]: Refactoring
+        - button "Architecture" [ref=e67]:
+          - img [ref=e69]
+          - generic [ref=e73]: Architecture
+        - button "Testing" [ref=e74]:
+          - img [ref=e76]
+          - generic [ref=e79]: Testing
+      - generic [ref=e81]:
+        - paragraph [ref=e82]: Unlock Premium
+        - paragraph [ref=e83]: Get all 50+ pro prompts + updates.
+        - link "Upgrade" [ref=e84] [cursor=pointer]:
+          - /url: /pricing
+          - text: Upgrade
+          - img [ref=e85]
+    - generic [ref=e87]:
+      - banner [ref=e88]:
+        - button "Search prompts… K" [ref=e89]:
+          - img [ref=e90]
+          - generic [ref=e93]: Search prompts…
+          - generic [ref=e94]:
+            - img [ref=e95]
+            - text: K
+        - generic [ref=e97]:
+          - link "Go Premium" [ref=e98] [cursor=pointer]:
+            - /url: /pricing
+            - img [ref=e99]
+            - text: Go Premium
+          - link "Sign In" [ref=e102] [cursor=pointer]:
+            - /url: /sign-in
+      - main [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - img [ref=e106]
+            - text: The Elite TypeScript Library
+          - heading "Deterministic Engineering with Prompt-Flow" [level=1] [ref=e109]
+          - paragraph [ref=e110]: Eliminate trial-and-error debugging. Access specialized engineering layers designed to deliver production-grade, guesswork-free AI outputs in under 60 seconds.
+          - generic [ref=e111]:
+            - link "Browse All Prompts" [ref=e112] [cursor=pointer]:
+              - /url: /prompts
+              - text: Browse All Prompts
+              - img [ref=e113]
+            - link "Try the Playground" [ref=e115] [cursor=pointer]:
+              - /url: /playground
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - heading "Featured Prompts" [level=2] [ref=e119]
+              - paragraph [ref=e120]: Our most popular and highly-rated engineering prompts.
+            - link "View all" [ref=e121] [cursor=pointer]:
+              - /url: /prompts
+              - text: View all
+              - img [ref=e122]
+          - generic [ref=e125]:
+            - generic [ref=e127] [cursor=pointer]:
+              - generic [ref=e129]:
+                - generic [ref=e131]:
+                  - img [ref=e132]
+                  - text: Debugging
+                - generic [ref=e141]:
+                  - heading "Bun Runtime Error Diagnostics" [level=3] [ref=e142]
+                  - generic [ref=e143]: Deterministic
+                - paragraph [ref=e144]: Systematically diagnose and fix runtime errors in Bun.js applications using structured stack trace analysis.
+                - generic [ref=e145]:
+                  - generic [ref=e146]: bun
+                  - generic [ref=e147]: debugging
+                  - generic [ref=e148]: runtime
+              - generic [ref=e149]:
+                - generic [ref=e150]:
+                  - generic [ref=e151]:
+                    - img [ref=e152]
+                    - text: 342 copies
+                  - generic [ref=e154]: 1 version
+                - generic [ref=e156]:
+                  - link "View" [ref=e158]:
+                    - /url: /prompts/bun-runtime-error-diagnostics
+                    - img [ref=e159]
+                    - text: View
+                  - button "Copy" [ref=e162]:
+                    - img [ref=e163]
+                    - text: Copy
+            - generic [ref=e167] [cursor=pointer]:
+              - generic [ref=e169]:
+                - generic [ref=e170]:
+                  - generic [ref=e171]:
+                    - img [ref=e172]
+                    - text: Boilerplate
+                  - generic [ref=e176]:
+                    - img [ref=e177]
+                    - text: Pro
+                - generic [ref=e179]:
+                  - heading "Next.js Server Action Factory" [level=3] [ref=e180]
+                  - generic [ref=e181]: Deterministic
+                - paragraph [ref=e182]: Generate type-safe Next.js Server Actions with Zod validation, optimistic updates, and error boundaries.
+                - generic [ref=e183]:
+                  - generic [ref=e184]: nextjs
+                  - generic [ref=e185]: server-actions
+                  - generic [ref=e186]: zod
+              - generic [ref=e187]:
+                - generic [ref=e188]:
+                  - generic [ref=e189]:
+                    - img [ref=e190]
+                    - text: 890 copies
+                  - generic [ref=e192]: 1 version
+                - generic [ref=e194]:
+                  - link "View" [ref=e196]:
+                    - /url: /prompts/nextjs-server-action-factory
+                    - img [ref=e197]
+                    - text: View
+                  - link "Unlock" [ref=e201]:
+                    - /url: /pricing
+                    - img [ref=e202]
+                    - text: Unlock
+            - generic [ref=e205] [cursor=pointer]:
+              - generic [ref=e207]:
+                - generic [ref=e209]:
+                  - img [ref=e210]
+                  - text: Boilerplate
+                - generic [ref=e214]:
+                  - heading "Elysia.js API Route Generator" [level=3] [ref=e215]
+                  - generic [ref=e216]: Deterministic
+                - paragraph [ref=e217]: Generate fully-typed, production-ready Elysia.js API routes with validation and Drizzle ORM.
+                - generic [ref=e218]:
+                  - generic [ref=e219]: elysia
+                  - generic [ref=e220]: bun
+                  - generic [ref=e221]: api
+              - generic [ref=e222]:
+                - generic [ref=e223]:
+                  - generic [ref=e224]:
+                    - img [ref=e225]
+                    - text: 512 copies
+                  - generic [ref=e227]: 1 version
+                - generic [ref=e229]:
+                  - link "View" [ref=e231]:
+                    - /url: /prompts/elysia-api-route-generator
+                    - img [ref=e232]
+                    - text: View
+                  - button "Copy" [ref=e235]:
+                    - img [ref=e236]
+                    - text: Copy
+            - generic [ref=e240] [cursor=pointer]:
+              - generic [ref=e242]:
+                - generic [ref=e243]:
+                  - generic [ref=e244]:
+                    - img [ref=e245]
+                    - text: Logic
+                  - generic [ref=e247]:
+                    - img [ref=e248]
+                    - text: Pro
+                - generic [ref=e250]:
+                  - heading "TypeScript Algorithm Optimizer" [level=3] [ref=e251]
+                  - generic [ref=e252]: Deterministic
+                - paragraph [ref=e253]: Transform naive algorithms into optimal TypeScript implementations using Big-O analysis.
+                - generic [ref=e254]:
+                  - generic [ref=e255]: algorithms
+                  - generic [ref=e256]: typescript
+                  - generic [ref=e257]: optimization
+              - generic [ref=e258]:
+                - generic [ref=e259]:
+                  - generic [ref=e260]:
+                    - img [ref=e261]
+                    - text: 215 copies
+                  - generic [ref=e263]: 1 version
+                - generic [ref=e265]:
+                  - link "View" [ref=e267]:
+                    - /url: /prompts/typescript-algorithm-optimizer
+                    - img [ref=e268]
+                    - text: View
+                  - link "Unlock" [ref=e272]:
+                    - /url: /pricing
+                    - img [ref=e273]
+                    - text: Unlock
+            - generic [ref=e276] [cursor=pointer]:
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - generic [ref=e280]:
+                    - img [ref=e281]
+                    - text: Vercel AI SDK
+                  - generic [ref=e284]:
+                    - img [ref=e285]
+                    - text: Pro
+                - generic [ref=e287]:
+                  - heading "AI SDK StreamObject Generator" [level=3] [ref=e288]
+                  - generic [ref=e289]: Deterministic
+                - paragraph [ref=e290]: Generate deterministic, type-safe streaming objects using Vercel AI SDK and Zod.
+                - generic [ref=e291]:
+                  - generic [ref=e292]: vercel-ai-sdk
+                  - generic [ref=e293]: zod
+                  - generic [ref=e294]: streaming
+              - generic [ref=e295]:
+                - generic [ref=e296]:
+                  - generic [ref=e297]:
+                    - img [ref=e298]
+                    - text: 1,840 copies
+                  - generic [ref=e300]: 1 version
+                - generic [ref=e302]:
+                  - link "View" [ref=e304]:
+                    - /url: /prompts/ai-sdk-stream-object-generator
+                    - img [ref=e305]
+                    - text: View
+                  - link "Unlock" [ref=e309]:
+                    - /url: /pricing
+                    - img [ref=e310]
+                    - text: Unlock
+  - alert [ref=e312]
+```

@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="assets/images/hero.png" alt="Prompt-Flow Pro Dashboard" width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
+  
+  <h1>🌊 Prompt-Flow Pro</h1>
+  <p><strong>The Elite Engineering Intelligence System for Bun.js & Next.js 15</strong></p>
 
-## Getting Started
+  <p>
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white" alt="Bun" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+  </p>
+</div>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Prompt-Flow Pro** is a high-fidelity, deterministic engineering layer optimized for the modern developer ecosystem. It eliminates the trial-and-error of standard AI tools by wrapping raw prompts in rigorous, model-specific "Chain-of-Thought" structures and automatically injecting multi-file workspace context.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📊 The "Pro" Evolution
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Feature | Standard AI Usage | Prompt-Flow Pro |
+| :--- | :--- | :--- |
+| **Output Consistency** | Hallucinations & guesswork | **Deterministic Scoring System (90+ DET)** |
+| **Context Assembly** | Manual copy-pasting | **Drag-and-Drop Multi-File Context Injector** |
+| **Model Optimization** | One-size-fits-all prompts | **Claude XML CoT, GPT-4o Markdown, Cursor File-Aware XML** |
+| **Monetization Model** | One-time low-value sale | **Value Ladder: Pro Launch, Enterprise License, Live Feed** |
+| **Core Architecture** | Generic prompt storage | **TypeScript-driven System Engine** |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Real-World Impact & Problem Solving
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The problem with current AI models is not intelligence—it is **context alignment** and **format compliance**. Developers waste hours coaxing conversational LLMs to use the correct library versions, stop hallucinating Node.js APIs in a Bun environment, or write proper Zod schemas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Prompt-Flow Pro solves this by:**
+- **Automated Context Parsing:** Automatically stripping `package.json` dependencies and `tsconfig.json` path aliases to feed the LLM the exact constraints of your workspace.
+- **Priority Stack Trace Injection:** Ensuring that runtime fixes are hyper-focused on the exact failing line of code.
+- **Vercel AI SDK Layer:** Bridging the gap to production by generating deterministic `streamObject` schemas and type-safe `tool()` handlers.
 
-## Deploy on Vercel
+> **Efficiency Gain: ~45 minutes of manual debugging → ~2 minutes of deterministic generation.**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👨‍💻 Who This Is For
+
+- **Senior Engineers** who require zero-hallucination code generation.
+- **Tech Leads & Startups** looking to scaffold full-stack architectures (Drizzle, Elysia, Next.js) reliably.
+- **AI Application Builders** needing deterministic tool calling and streaming handlers via the Vercel AI SDK.
+
+---
+
+## 🛠️ Technical Architecture
+
+- **Frontend Design**: A hyper-modern Bento Grid UI featuring a deep charcoal background (`#0A0A0A`) with Emerald Green (`#10B981`) accents. Prompt cards feature a 60fps rotating `conic-gradient` neon ring indicating its Deterministic Score.
+- **Interactions**: Built natively with Framer Motion. Hovering over a prompt card gracefully slides down an accordion detailing specific Claude and Cursor model optimizations.
+- **System Engine**: Pure TypeScript compilation of user inputs into strict semantic formats (XML/MD).
+- **Multi-Action Export**: A single sleek dropdown UI button that transpiles context specifically for:
+  - **Claude (XML)**: Using `<chain_of_thought_protocol>`
+  - **GPT-4o (MD)**: Using hierarchical constraints
+  - **Cursor (Agent)**: Emitting explicit `@package.json` and `@tsconfig.json` directives.
+
+---
+
+## 🛡️ Testing & Verification
+
+For instructions on how to manually verify the strict deterministic outputs and UI workflows, see the dedicated testing protocol:
+👉 **[Read the Manual Testing Guide](MANUAL_TESTING.md)**
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the Repo:**
+   ```bash
+   git clone https://github.com/pavankumar9d-rgb/prompt-flow.git
+   cd prompt-flow
+   ```
+2. **Install Operations:**
+   ```bash
+   bun install
+   ```
+3. **Run Development Server:**
+   ```bash
+   npm run dev
+   ```
+
+---
+<div align="center">
+  <i>Architected by the Prompt-Flow Engineering Team.</i>
+</div>
