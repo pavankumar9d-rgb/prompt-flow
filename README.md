@@ -9,6 +9,7 @@
     <img src="https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
     <img src="https://img.shields.io/badge/Supabase_Auth-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase Auth" />
     <img src="https://img.shields.io/badge/Security-Production_Ready-success?style=for-the-badge" alt="Security" />
+    <img src="https://img.shields.io/badge/Privacy-Local_Only-blue?style=for-the-badge" alt="Local First" />
   </p>
 </div>
 
@@ -22,11 +23,11 @@
 
 | Feature | Standard AI Usage | Prompt-Flow Pro |
 | :--- | :--- | :--- |
-| **Output Consistency** | Hallucinations & guesswork | **Deterministic Scoring System (90+ DET)** |
+| **Output Consistency** | Hallucinations & guesswork | **Deterministic Scoring System (104/104 DET Tests)** |
 | **Context Assembly** | Manual copy-pasting | **Drag-and-Drop Multi-File Context Injector** |
-| **Model Optimization** | One-size-fits-all prompts | **Claude XML CoT, GPT-4o Markdown, Cursor File-Aware XML** |
-| **Monetization Model** | One-time low-value sale | **Value Ladder: Pro Launch, Enterprise License, Live Feed** |
-| **Core Architecture** | Generic prompt storage | **TypeScript-driven System Engine** |
+| **Model Optimization** | One-size-fits-all prompts | **Claude XML CoT, GPT-4o Markdown, Cursor XML** |
+| **Monetization Model** | One-time low-value sale | **Value Ladder: Pro Launch, Enterprise License** |
+| **Core Architecture** | Generic prompt storage | **Strict Next.js 15 + Drizzle ORM Engine** |
 
 ---
 
@@ -53,34 +54,50 @@ The problem with current AI models is not intelligence—it is **context alignme
 
 ## 🛠️ Technical Architecture
 
-- **Frontend Design**: A hyper-modern Bento Grid UI featuring a deep charcoal background (`#0A0A0A`) with Emerald Green (`#10B981`) accents. Prompt cards feature a 60fps rotating `conic-gradient` neon ring indicating its Deterministic Score.
-- **Interactions**: Built natively with Framer Motion. Hovering over a prompt card gracefully slides down an accordion detailing specific Claude and Cursor model optimizations.
-- **System Engine**: Pure TypeScript compilation of user inputs into strict semantic formats (XML/MD).
-- **Multi-Action Export**: A single sleek dropdown UI button that transpiles context specifically for:
-  - **Claude (XML)**: Using `<chain_of_thought_protocol>`
-  - **GPT-4o (MD)**: Using hierarchical constraints
-  - **Cursor (Agent)**: Emitting explicit `@package.json` and `@tsconfig.json` directives.
+- **Frontend Design**: A hyper-modern Bento Grid UI featuring a deep charcoal background (`#0A0A0A`) with Emerald Green (`#10B981`) and vibrant gradients. Prompt cards feature a 60fps rotating `conic-gradient` neon ring indicating its Deterministic Score.
+- **Interactions**: Built natively with Framer Motion. Hovering over a prompt card gracefully slides down an accordion detailing specific model optimizations.
+- **Authentication**: Secured by `@supabase/ssr` running inside Next.js Middleware, shielding protected routes (`/dashboard`, `/settings`) with an iron-clad token verification circuit.
+- **Multi-Action Export**: A single sleek dropdown UI button that transpiles context specifically for Claude, GPT, or Cursor agent interfaces.
+
+---
 
 ## 🛡️ Security & Privacy
 
-Prompt-Flow Pro is built on a **Secure, Production-Ready** architecture.
-- **Supabase Authentication**: Enterprise-grade auth with HttpOnly cookies and server-side session verification.
-- **Client-Side Processing**: All file parsing (package.json, tsconfig.json) happens purely in your browser's memory. 
-- **Zero Data Exit**: We never transmit your source code or project metadata to a remote server. 
-👉 **[Read our Security Disclosure](SECURITY.md)**
+Prompt-Flow Pro is architected with a **Security-First, Local-First** philosophy. We recognize that your source code is your most valuable asset.
+
+### 1. Local Runtime Processing
+**Your code never leaves your local runtime.**
+Unlike traditional cloud-based AI tools, Prompt-Flow Pro does not transmit your source code, project manifests, or sensitive metadata to any remote server for processing. 
+- **Memory-Only Execution**: All project context is processed entirely in your machine's volatile memory (RAM). 
+- **Zero-Persistence**: Once your local session is closed, all logic is permanently purged.
+
+### 2. Telemetry & Transparency
+- **Optional Telemetry**: We provide an explicit `--no-telemetry` flag in our CLI to disable all external communication natively.
+- **Auditable Runtime**: Senior engineers are encouraged to audit our network traffic. Zero bytes of your code are sent outside.
+
+### 3. Secure Authentication
+- **HttpOnly Cookies**: Sessions are stored in secure, HttpOnly cookies to prevent XSS-based token theft.
+- **Row Level Security (RLS)**: Database connections are locked down. Generic error messaging natively blocks credential enumeration.
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Unified CLI Workflow (Recommended)
-Automatically sync your project context with the Pro dashboard:
+### 1. Environment Setup
+Copy the `.env.example` file to create your local variables:
 ```bash
-# In your project root
-bunx prompt-flow
+cp .env.example .env.local
+```
+Fill in your Supabase credentials to enable the authentication gateway.
+
+### 2. Unified CLI Workflow (Recommended)
+Automatically sync your project context with the Pro dashboard securely:
+```bash
+# Start the Prompt-Flow system without phoning home
+bunx prompt-flow --no-telemetry
 ```
 
-### 2. Manual Installation
+### 3. Manual Installation
 1. **Clone the Repo:**
    ```bash
    git clone https://github.com/pavankumar9d-rgb/prompt-flow.git
@@ -90,9 +107,13 @@ bunx prompt-flow
    ```bash
    bun install
    ```
-3. **Run Development Server:**
+3. **Database Push (Drizzle):**
    ```bash
-   npm run dev
+   npx drizzle-kit push
+   ```
+4. **Run Development Server:**
+   ```bash
+   npm run dev -p 3005
    ```
 
 ---

@@ -18,14 +18,22 @@ export default function LoginPage() {
     e.preventDefault()
     setLoading(true)
 
-    const { error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    })
+    try {
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      })
 
-    if (error) {
-      toast.error('Invalid credentials', {
-        description: 'Please check your email and password.',
+      if (error) {
+        toast.error('Invalid credentials', {
+          description: 'Please check your email and password.',
+        })
+        setLoading(false)
+        return
+      }
+    } catch (err: any) {
+      toast.error('Connection Error', {
+        description: 'Unable to connect to the authentication server.',
       })
       setLoading(false)
       return

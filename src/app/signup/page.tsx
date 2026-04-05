@@ -18,17 +18,25 @@ export default function SignupPage() {
     e.preventDefault()
     setLoading(true)
 
-    const { error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: {
-        emailRedirectTo: `${window.location.origin}/auth/callback`,
-      },
-    })
+    try {
+      const { error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          emailRedirectTo: `${window.location.origin}/auth/callback`,
+        },
+      })
 
-    if (error) {
-      toast.error('Signup failed', {
-        description: 'Invalid credentials or account already exists.',
+      if (error) {
+        toast.error('Signup failed', {
+          description: 'Invalid credentials or account already exists.',
+        })
+        setLoading(false)
+        return
+      }
+    } catch (err: any) {
+      toast.error('Connection Error', {
+        description: 'Unable to connect to the authentication server.',
       })
       setLoading(false)
       return
