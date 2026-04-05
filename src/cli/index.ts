@@ -23,16 +23,32 @@ async function main() {
   const isQuiet = args.includes("--quiet") || args.includes("-q");
   const isJson = args.includes("--json");
   const isValidate = args.includes("--validate");
+  const isNoTelemetry = args.includes("--no-telemetry");
 
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
     if (arg === "-u" || arg === "--url" || arg === "--dashboard-url") {
       dashboardUrl = args[i + 1];
     }
+    if (arg === "--help" || arg === "-h") {
+      console.log(`
+🌊 Prompt-Flow Pro CLI v${VERSION}
+Usage: bunx prompt-flow [options]
+
+Options:
+  -u, --url <url>      Specify custom dashboard URL
+  -q, --quiet          Suppress all non-error output
+  --json               Output result as JSON
+  --validate           Only check if dashboard is online
+  --no-telemetry       Disable all telemetry/analytics (Standard)
+  -h, --help           Show this help message
+`);
+      process.exit(0);
+    }
   }
 
   if (!isQuiet && !isJson) {
-    console.log(`\n🌊 Prompt-Flow Pro CLI v${VERSION}`);
+    console.log(`\n🌊 Prompt-Flow Pro CLI v${VERSION}${isNoTelemetry ? " (Telemetry Disabled)" : ""}`);
     console.log(`───────────────────────────────────────`);
   }
 

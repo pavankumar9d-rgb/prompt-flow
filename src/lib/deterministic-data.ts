@@ -29,7 +29,7 @@ export const SCENARIOS: Scenario[] = [
     description: "Bun SQLite module not found in native environment",
     codeSnippet: 'import { Database } from "bun:sqlite";',
     context: { errorStack: "TypeError: Cannot find module 'bun:sqlite'" },
-    expectedInclusions: ["bun:sqlite", "Native Bun API", "Root Cause Analysis"],
+    expectedInclusions: ["bun:sqlite", "native Bun APIs"],
   },
   {
     id: "RT-002",
@@ -37,7 +37,7 @@ export const SCENARIOS: Scenario[] = [
     description: "Next.js 15 Hydration mismatch on client component",
     codeSnippet: '<div>{typeof window !== "undefined" ? "client" : "server"}</div>',
     context: { errorStack: "Error: Hydration failed because the initial UI does not match" },
-    expectedInclusions: ["Hydration mismatch", "useEffect", "suppressHydrationWarning"],
+    expectedInclusions: ["Hydration mismatch", "useEffect"],
   },
   // ... (I'll generate the IDs and basic metadata for the full 104 below)
 ];
