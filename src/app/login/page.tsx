@@ -5,10 +5,11 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 
+import { toast } from 'sonner'
+
 export default function LoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const router = useRouter()
   const supabase = createClient()
@@ -16,7 +17,6 @@ export default function LoginPage() {
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
-    setError(null)
 
     const { error } = await supabase.auth.signInWithPassword({
       email,
@@ -24,11 +24,16 @@ export default function LoginPage() {
     })
 
     if (error) {
-      setError('Invalid credentials')
+      toast.error('Invalid credentials', {
+        description: 'Please check your email and password.',
+      })
       setLoading(false)
       return
     }
 
+    toast.success('Welcome back!', {
+      description: 'Redirecting to your dashboard...',
+    })
     router.push('/dashboard')
     router.refresh()
   }
@@ -73,12 +78,6 @@ export default function LoginPage() {
               disabled={loading}
             />
           </div>
-
-          {error && (
-            <div className="bg-red-900/30 border border-red-500/50 text-red-500 px-4 py-2 rounded-lg text-sm text-center">
-              {error}
-            </div>
-          )}
 
           <button
             type="submit"

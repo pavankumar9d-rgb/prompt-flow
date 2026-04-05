@@ -37,6 +37,8 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+import { Toaster } from "sonner";
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -46,6 +48,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#09090B] text-[#FAFAFA] min-h-screen`}
       >
         {children}
+        <Toaster closeButton theme="dark" position="top-center" richColors />
       </body>
     </html>
   );

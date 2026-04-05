@@ -5,10 +5,11 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 
+import { toast } from 'sonner'
+
 export default function SignupPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const router = useRouter()
   const supabase = createClient()
@@ -16,7 +17,6 @@ export default function SignupPage() {
   async function handleSignup(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
-    setError(null)
 
     const { error } = await supabase.auth.signUp({
       email,
@@ -27,11 +27,16 @@ export default function SignupPage() {
     })
 
     if (error) {
-      setError('Invalid credentials')
+      toast.error('Signup failed', {
+        description: 'Invalid credentials or account already exists.',
+      })
       setLoading(false)
       return
     }
 
+    toast.success('Account created!', {
+      description: 'Welcome to Prompt-Flow Pro.',
+    })
     router.push('/dashboard')
     router.refresh()
   }
@@ -76,12 +81,6 @@ export default function SignupPage() {
               disabled={loading}
             />
           </div>
-
-          {error && (
-            <div className="bg-red-900/30 border border-red-500/50 text-red-500 px-4 py-2 rounded-lg text-sm text-center">
-              {error}
-            </div>
-          )}
 
           <button
             type="submit"
