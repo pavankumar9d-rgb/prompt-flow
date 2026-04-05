@@ -1,15 +1,53 @@
-import { betterAuth } from "better-auth";
-import Database from "better-sqlite3";
-import path from "path";
+import { createClient } from './supabase/server'
+import { redirect } from 'next/navigation'
 
-// Shared sqlite instance for auth
-const dbPath = path.join(process.cwd(), "prompt-flow.db");
-const sqlite = new Database(dbPath);
+export async function login(formData: FormData) {
+  const supabase = await createClient()
 
-export const auth = betterAuth({
-  database: sqlite,
-  emailAndPassword: {
-    enabled: true,
-  },
-  // Add providers or custom fields here
-});
+  const email = formData.get('email') as string
+  const password = formData.get('password') as string
+
+  const { error } = await supabase.auth.signInWithPassword({
+    email,
+    password,
+  })
+
+  if (error) {
+    return { error: 'Invalid credentials' }
+  }
+
+  redirect('/dashboard')
+}
+
+export async function signup(formData: FormData) {
+  const supabase = await createClient()
+
+  const email = formData.get('email') as string
+  const password = formData.get('password') as string
+
+  const { error } = await supabase.auth.signUp({
+    email,
+    password,
+  })
+
+  if (error) {
+    return { error: 'Invalid credentials' }
+  }
+
+  redirect('/dashboard')
+}
+
+export async function logout() {
+  const supabase = await createClient()
+  await supabase.auth.signOut()
+  redirect('/login')
+}
+
+export async function getUser() {
+  const supabase = await createClient()
+  const { data: { user }, error } = await supabase.auth.getUser()
+  if (error || !user) {
+    return null
+  }
+  return user
+}

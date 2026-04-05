@@ -7,8 +7,8 @@
   <p>
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
     <img src="https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-    <img src="https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white" alt="Bun" />
-    <img src="https://img.shields.io/badge/Security-Local_Only-success?style=for-the-badge" alt="Security" />
+    <img src="https://img.shields.io/badge/Supabase_Auth-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase Auth" />
+    <img src="https://img.shields.io/badge/Security-Production_Ready-success?style=for-the-badge" alt="Security" />
   </p>
 </div>
 
@@ -63,10 +63,10 @@ The problem with current AI models is not intelligence—it is **context alignme
 
 ## 🛡️ Security & Privacy
 
-Prompt-Flow Pro is built on a **Local-First** privacy architecture. 
+Prompt-Flow Pro is built on a **Secure, Production-Ready** architecture.
+- **Supabase Authentication**: Enterprise-grade auth with HttpOnly cookies and server-side session verification.
 - **Client-Side Processing**: All file parsing (package.json, tsconfig.json) happens purely in your browser's memory. 
 - **Zero Data Exit**: We never transmit your source code or project metadata to a remote server. 
-- **CLI Signal**: Context injection via the CLI remains entirely within your local `localhost` loop.
 👉 **[Read our Security Disclosure](SECURITY.md)**
 
 ---

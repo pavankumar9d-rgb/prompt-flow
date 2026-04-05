@@ -4,70 +4,60 @@ Follow these step-by-step instructions to verify the Prompt-Flow Pro interface a
 
 ---
 
-## Step 1: Open the Application
+## Step 1: Authentication Test
 1. Ensure your local dev server is running (`npm run dev`).
-2. Open your web browser and navigate to: **[http://localhost:3000/](http://localhost:3000/)**
-3. On the main dashboard, locate the Prompt Card titled **"Bun Runtime Error Diagnostics"** and click **Open**.
+2. Open your web browser and navigate to: **[http://localhost:3000/login](http://localhost:3000/login)**.
+3. **Login Test**: Enter valid credentials. Verify generic error messages ("Invalid credentials") appear for incorrect logins.
+4. **Signup Test**: Navigate to `/signup` and create a new account. Verify the redirect to `/dashboard`.
 
 ---
 
-## Step 2: Inject Workspace Context
+## Step 2: Session & Route Protection
+1. Log out using the **Sign out** button in the top navigation.
+2. Attempt to navigate directly to **[http://localhost:3000/dashboard](http://localhost:3000/dashboard)**.
+3. *Verification*: The system should automatically redirect you back to `/login`.
+4. Log back in and navigate to `/login`. 
+5. *Verification*: The system should automatically redirect you forward to `/dashboard`.
+
+---
+
+## Step 3: Inject Workspace Context
 To test the "Zero-Hallucination" context injector:
-1. In the **Context Injector** section, drag and drop a `package.json` file from any project. 
-2. *Alternative Test*: Try to type into the area. Notice that the UI explicitly prevents typing and enforces Drag & Drop to ensure clean JSON parsing.
+1. In the **Context Injector** section of a Prompt Card, drag and drop a `package.json` file. 
+2. *Alternative Test*: Try to type into the area. Notice that the UI enforces Drag & Drop.
 
 ---
 
-## Step 3: Insert the Error Code
-Scroll down to the **Variables** section. You will see a text area for `[ErrorMessage]`. 
-Copy and paste the exact error block below into that field. This is a common, real-world Bun error regarding Prisma:
+## Step 4: Insert the Error Code
+Paste a standard Bun error regarding Prisma into the `[ErrorMessage]` field:
 
 ```text
 TypeError: PrismaClient is not a function
     at new PrismaClient (/app/node_modules/.prisma/client/index.js:12:1)
     at fetchDatabase (/app/src/db/index.ts:15:20)
     at Object.<anonymous> (/app/src/index.ts:5:10)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
 ```
 
 ---
 
-## Step 4: Test the Multi-Action Export Engine
+## Step 5: Multi-Action Export Engine
 Scroll to the bottom of the page to find the **Export to LLM** button.
 
-1. **Test Claude (XML)**
-   - Click **Export to LLM** to open the dropdown menu.
-   - Select **Claude (XML)**.
-   - *Verification*: The button should briefly turn into a green "Copied!" checkmark.
-   - Paste the result into a scratchpad (like Notepad or VS Code). Verify that the structure contains `<system_instruction>` and the specific `<chain_of_thought_protocol>` enforcing Bun native APIs.
-
-2. **Test GPT-4o (MD)**
-   - Click **Export to LLM** again.
-   - Select **GPT-4o (MD)**.
-   - *Verification*: The button confirms it copied.
-   - Paste the result. Verify that the structure relies on Markdown `##` headers rather than XML tags, specifically tailored for OpenAi's system role.
-
-3. **Test Cursor (Agent)**
-   - Click **Export to LLM** one last time.
-   - Select **Cursor (Agent)**.
-   - *Verification*: The button confirms it copied.
-   - Paste the result. Verify the presence of the `<workspace_context>` tag with the explicit directive: *"Read @package.json and @tsconfig.json before writing code."*
+1. **Test Claude (XML)**: Open the dropdown and select **Claude (XML)**. Verify the coped result contains `<system_instruction>`.
+2. **Test GPT-4o (MD)**: Select **GPT-4o (MD)**. Verify the structure relies on Markdown `##` headers.
+3. **Test Cursor (Agent)**: Select **Cursor (Agent)**. Verify the presence of the `<workspace_context>` tag.
 
 ---
 
 ## Step 6: Professional CLI Verification
 To verify the terminal-to-browser context injection:
 1. Open your terminal in any project root (ensure it has a `package.json`).
-2. Run the command:
-   ```bash
-   bunx prompt-flow
-   ```
+2. Run: `bunx prompt-flow`
 3. *Verification*: 
-   - Your default browser should automatically launch to `http://localhost:3000/`.
-   - A green **`CLI_SYNC`** status badge should be visible on the Context Injector.
-   - The `package.json` should be pre-loaded into the workspace without manual dragging.
+   - Browser launches to `http://localhost:3000/`.
+   - A green **`CLI_SYNC`** status badge is visible.
+   - The `package.json` is pre-loaded.
 
 ---
 
 *If you can successfully complete these steps and see the targeted LLM payloads on your clipboard, your Prompt-Flow Pro installation is 100% bug-free and production-ready.*
-
